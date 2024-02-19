@@ -1,0 +1,5 @@
+temp: 0.5
+top_k: 40
+num_seq: 10
+sample: true
+max_dec_length: 128
