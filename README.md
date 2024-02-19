@@ -1,3 +1,4 @@
 # CoT_interpretability
 
-ghi
+This project is based on 3 steps
+1) 
