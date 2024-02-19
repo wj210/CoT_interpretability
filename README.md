@@ -4,6 +4,8 @@
 **Install requirements**
 `pip install -r requirements.txt`
 
+dataset is derived from `https://github.com/wangpf3/pinto-faithful-language-reasoning`
+
 This project is based on 3 steps
 
 **1) Generating base CoT reasoning chains**
@@ -22,5 +24,14 @@ This project is based on 3 steps
 - The results are in `checkpoints/$dataset/$prompt_type/out_$seed.txt
 - In any event, when the evaluation gets interrupted, the prior results are saved in `finished_$seed`.pkl, such that when you run the code again, it filters out all evaluated samples, this is to save resources and prevent restarting from the beginning.
 - Important note, the script first check out file for any results, if in any event, the results file exist and it contains incomplete results, ie there are completed results for paraphrase, but not add_mistakes and cf, you should delete the entire results file before running, else the script reruns the evaluation for all 3 perturbations. If this is not a concern, then ignore it. LAS is not affected by this, as it does not have any saved results in `finished_$seed`.pkl.
+
+**Using TGI or AutoGPTQ**
+- Using TGI is much faster as compared to standard generation from `model.generate`, install TGI from `https://github.com/huggingface/text-generation-inference`, this codebase uses TGI in local mode, though you can easily use docker, just modify `scripts/tgi.sh`.
+- **Remember to first run `tgi.sh` before running `run_llama.sh` and set the port correctly.
+- If using GPTQ, install it via `https://github.com/PanQiWei/AutoGPTQ`, in which case, you can ignore tgi commands, but use `torchrun` in the main script and set it to number of gpus required by memory, since it is quantized, 2 >40GB should be sufficient.
+
+**Notes**
+- The generate hps are in `configs` according to each cot_type, main difference is in num_seq for cot_sc and cot_sec.
+
 
 
