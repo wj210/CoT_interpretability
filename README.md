@@ -32,6 +32,7 @@ This project is based on 3 steps
 
 **Notes**
 - The generate hps are in `configs` according to each cot_type, main difference is in num_seq for cot_sc and cot_sec.
+- Templates for few-shot are in `template`, where `refine_template` are for self-refine, `prompt_template` is for the rest and `perturbation_template` are for step 2.
 
 
 
