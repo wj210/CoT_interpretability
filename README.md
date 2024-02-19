@@ -1,4 +1,4 @@
-# CoT_interpretability
+# How Interpretable are Reasoning Explanations from Prompting Large Language Models?
 
 
 **Install requirements**
