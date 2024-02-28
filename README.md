@@ -35,5 +35,10 @@ This project is based on 3 steps
 - Templates for few-shot are in `template`, where `refine_template` are for self-refine, `prompt_template` is for the rest and `perturbation_template` are for step 2.
 - Main model used is `TheBloke/Llama-2-70B-chat-GPTQ` from huggingface. Any usage installations can also be referenced from [Llama-GPTQ](https://huggingface.co/TheBloke/Llama-2-70B-Chat-GPTQ)
 
-
-
+**Cite**
+`@article{jie2024interpretable,
+  title={How Interpretable are Reasoning Explanations from Prompting Large Language Models?},
+  author={Jie, Yeo Wei and Satapathy, Ranjan and Mong, Goh Siow and Cambria, Erik and others},
+  journal={arXiv preprint arXiv:2402.11863},
+  year={2024}
+}`
