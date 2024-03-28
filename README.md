@@ -38,8 +38,8 @@ This project is based on 3 steps
 **Paper Citation**
 ```bibtex
 @article{jie2024interpretable,
-  title={How Interpretable are Reasoning Explanations from Prompting Large Language Models?},
-  author={Jie, Yeo Wei and Satapathy, Ranjan and Mong, Goh Siow and Cambria, Erik and others},
-  journal={arXiv preprint arXiv:2402.11863},
-  year={2024}
+title={How Interpretable are Reasoning Explanations from Prompting Large Language Models?},
+author={Jie, Yeo Wei and Satapathy, Ranjan and Mong, Goh Siow and Cambria, Erik},
+conference={NAACL},
+year={2024}
 }
