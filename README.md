@@ -39,7 +39,7 @@ This project is based on 3 steps
 ```bibtex
 @article{jie2024interpretable,
 title={How Interpretable are Reasoning Explanations from Prompting Large Language Models?},
-author={Jie, Yeo Wei and Satapathy, Ranjan and Mong, Goh Siow and Cambria, Erik},
+author={Yeo, Wei Jie and Satapathy, Ranjan and Goh, Siow Mong and Cambria, Erik},
 conference={NAACL},
 year={2024}
 }
